@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+font-family: "Outfit", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+margin: 0;
+padding: 0;
+}
+body {
+background: linear-gradient(-45deg, #F2613F, #9B3922, #262626, #0C0C0C);
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+
+}
+
+@keyframes gradient {
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+
+header{
+	background-image: url(images/koe74o98-removebg-preview.png);background-repeat:no-repeat;
+	 /* background-size:100% 100%; */
+	  background-position:right;
+	   background-size:contain;
+}
+nav{
+position:fixed;
+width: 100%;
+height: 20mm;  
+display: flex;
+flex-direction: row;
+align-items: center;
+transition: 0.5s;
+z-index: 2;
+}
+
+nav.active{
+background-color:#191919;
+/* border-bottom:solid 1px #858785; */
+}
+header nav h2{
+font-size: 2rem;
+color: #fff;
+font-weight: lighter;
+position: absolute;
+left: 20px;
+}
+nav .links{
+position: absolute;
+right: 10px;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+nav .talk{
+position: absolute;
+right: 30px;
+}
+nav .links a{text-decoration: none;
+color: white;
+margin-left: 1%;
+margin-right: 1%;
+font-size: 20px;
+font-weight: normal;
+transition: 0.2s;
+}
+nav .links a:hover{
+padding-left: 6px;
+padding-right: 6px;
+border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
+background-color: #fff;
+color: black;
+}
+.openbtn{
+font-size: 25px;
+cursor: pointer;
+color: white;
+padding: 10px 15px;
+border: none;
+display: none;
+position: absolute;
+right: 10px;
+}
+
+.scrollTop{
+position: fixed;
+bottom: 20px;
+right: 20px;
+height: 50px;
+width: 50px;
+background: #D4D4D6;
+color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+border-radius: 50%;
+background-size: 40px;
+cursor: pointer;
+z-index: 100000;
+visibility: hidden;
+opacity: 0;
+transition: 0.5s;
+font-weight: bolder;
+font-size: x-large;
+}
+.scrollTop.active{
+visibility: visible;
+opacity: 0.7;
+}
+.scrollTop.active:hover{
+opacity: 1;
+}
+.overlay{
+height: 0%;
+width: 100%;
+position:fixed;
+z-index: 1;
+left: 0;
+right: 0;
+top: 0;
+background-color: #000;
+background-color: (0,0,0,0,9);
+overflow: hidden;
+transition: 0.5s;
+font-weight: lighter;
+}
+#services{
+	background-color: #191919;
+}
+.achievement{
+	transition: 0.3s;
+	padding: 48px;
+}
+.achievement:nth-child(2){
+	border: none;
+	background-color: #191919;
+}
+.achievement:nth-child(2):hover{
+	background-color: transparent;
+}
+.achievement:nth-child(2):hover .achievement{
+	background-color: #191919 !important;
+}
+.achievement:hover{
+	border: none;
+	background-color: #191919;
+	padding: 52px;
+}
+#portfolio{
+	background: #191919;
+}
+
+
+@media screen and (max-width:800px){  
+header{
+background-image: none;
+}
+nav h2{font-size: 2rem;
+color: #fff;
+}
+nav .talk{
+	right: 55px;
+}
+nav .talk .once{
+	display: none;
+}
+nav .links{
+display: none;
+}     
+.overlay-content{
+position: relative;
+top: 12%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+}
+.overlay .overlay-content a{
+font-size: 30px;
+padding: 8px;
+text-decoration: none;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+.overlay .closebtn{
+position: absolute;
+font-size: 40px;
+top: 10px;
+right: 25px;
+text-decoration: none;
+color: #fff;
+}
+.overlay .bow{
+font-size: 2rem;
+color: #fff;
+top: 9px;
+left: 20px;
+position: absolute;
+text-decoration: none;
+}
+.overlay a:hover, .overlay a:focus{
+color: #f1f1f1;
+border-bottom: none;
+}
+.openbtn{
+display: block;
+}
+}
