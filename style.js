@@ -45,7 +45,4 @@ ScrollReveal({
    ScrollReveal().reveal('.achievement', { delay: 500, origin: 'bottom', interval: 200});
    ScrollReveal().reveal('.main-port', { delay: 300, origin: 'bottom' });
    ScrollReveal().reveal('.jade', { delay: 500, origin: 'top' });
-   ScrollReveal().reveal('#song-1', { delay: 500, origin: 'bottom' });
-   ScrollReveal().reveal('#song-2', { delay: 100, origin: 'left' });
-   ScrollReveal().reveal('#song-3', { delay: 500, origin: 'bottom' });
-   ScrollReveal().reveal('#song-4', { delay: 100, origin: 'top' });
+   ScrollReveal().reveal('#song-1', { delay: 100, origin: 'bottom' });
